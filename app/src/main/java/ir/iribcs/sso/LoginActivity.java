@@ -121,7 +121,7 @@ public class LoginActivity extends AppCompatActivity {
             // The ApiException status code indicates the detailed failure reason.
             // Please refer to the GoogleSignInStatusCodes class reference for more information.
             TV_Wait.setVisibility(View.VISIBLE);
-            TV_Wait.setText("خطا در احراز هویت با گوگل! لطفا دسترسی به اینترنت و نیز اطلاعات حساب گوگل خود را بررسی نمایید.");
+            TV_Wait.setText("خطا در احراز هویت با گوگل! \n لطفا دسترسی به اینترنت و نیز اطلاعات حساب گوگل خود را بررسی نمایید.\n ممکن است تنظیمات حساب گوگل را انجام نداده باشید");
             Log.i(TAG, "{LOGIN} GoogleSignInOptions  code=" + e.getStatusCode() + "   > " + e.getMessage() );
             //updateUI(null);
         }
